@@ -30,17 +30,20 @@
     color: white;
 }
 
+.text-center {
+    text-align: center;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: #878787;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /**************************************************/
 
 main {
-    background-color: #141922;
+    background-color: #380f0f;
     height: calc(100vh - 100px);
 }
 
@@ -56,18 +59,60 @@ nav {
 
 .side-list {
     background-color: black;
+    float: left;
     display: flex;
     flex-direction: column;
     width: 15%;
     height: 100%;
 }
 
+.right-container {
+    float: left;
+    background-color: #111319;
+    width: 85%;
+}
 
+.upgrade-container {
+    background-color: #111319;
+    padding: 16px 10px;
+    text-align: right;
+}
 
+.upgrade-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 0px;
+    display: inline-block;
+    overflow: hidden;
+}
 
+.upgrade-btn a{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 14px;
+}
 
+.main-container {
+    background-color: #1B1E26;
+    padding: 20px;
+}
 
+.main-menu ul {
+    list-style: none;
+}
 
+.main-menu li {
+    display: inline-block;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #878787;
+    font-weight: 600;
+    font-size: 12px;
+}
 
 
 
@@ -165,8 +210,12 @@ nav {
     flex-shrink: 1;
 }
 
+.nav-bottom-right-icons a {
+    padding: 5px;
+}
+
 .bottom-right-bar {
-    width: 30%;
+    width: 25%;
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 10px;
