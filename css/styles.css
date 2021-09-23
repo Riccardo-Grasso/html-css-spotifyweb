@@ -137,8 +137,7 @@ nav {
 
 .song-container {
     width: calc(100% / 2 - 5px);
-    height: 210px;
-    border: 1px solid white;
+    height: 220px;
     text-align: center;
     overflow: hidden;
 }
@@ -147,13 +146,37 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding-bottom: 10px;
 }
 
+.created-for {
+    padding: 10px 0;
+    line-height: 20px;
+}
 
+.created-for-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
+.popular-artists {
+    padding: 10px 0;
+}
 
+.popular-artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
-
+.song-container .artist-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
 
 
 
