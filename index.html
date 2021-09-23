@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/favicon.ico" type="image/icon type"> 
         <link rel="stylesheet" href="css/styles.css">
         <title>Spotify</title>
     </head>
@@ -20,40 +21,53 @@
                 <div class="side-container text-white">
 
                     <div class="logo">
-                        <img src="img/logo.svg" class="hero-logo-big xs-none" alt="logo">
-                        <img src="img/logo-small.svg" class="hero-logo-small xs" alt="logo">
+                        <a href="#"><img src="img/logo.svg" class="hero-logo-big xs-none" alt="logo"></a>
+                        <a href="#"><img src="img/logo-small.svg" class="hero-logo-small xs" alt="logo"></a>
                     </div>
 
                     <div class="side-container-icons">
 
                         <div class="home">
-                            <img src="img/home.svg" class="inline-block" alt="home">
-                            <span class="xs-none">Home</span>
+                            <a href="#">
+                                <img src="img/home.svg" class="inline-block" alt="home">
+                                <span class="xs-none text-white">Home</span>
+                            </a>
                         </div>
+                        
                         <div class="search">
-                            <img src="img/search.svg" class="inline-block" alt="search">
-                            <span class="xs-none">Cerca</span>
+                            <a href="#">
+                                <img src="img/search.svg" class="inline-block" alt="search">
+                                <span class="xs-none">Cerca</span>
+                            </a>
                         </div>
                         <div class="library">
-                            <img src="img/libreria.svg" class="inline-block" alt="libreria">
-                            <span class="xs-none">La tua libreria</span>
+                            <a href="#">
+                                <img src="img/libreria.svg" class="inline-block" alt="libreria">
+                                <span class="xs-none">La tua libreria</span>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="playlist xs-none">
                         <div class="playlist-title">
-                            <h4 class="text-white padding-title">PLAYLIST</h4>
+                            <a href="#"><h4 class="text-white padding-title">PLAYLIST</h4></a>
                         </div>
 
                     </div>
 
                     <div class="side-container-bottom">
                         <div class="install">
-                            <img src="img/download.svg" class="download-logo" alt="">
-                            <span>Installa app</span>
-
+                            <a href="#">
+                                <img src="img/download.svg" class="download-logo" alt="download">
+                                <span class="xs-none">Installa app</span>
+                            </a>
                         </div>
-                        
+                        <div class="user">
+                            <a href="#">
+                                <img src="img/profile.svg" class="download-logo" alt="download">
+                                <span class="xs-none text-white" style="font-weight: 800;">John Doe</span>
+                            </a>
+                        </div>
                     </div>
                     
                 </div>
@@ -231,7 +245,9 @@
 
                 <div class="nav-bottom-center-bar text-white">
                     <div class="inline-block time text-small">0:25</div>
-                    <div class="inline-block bottom-center-bar"></div>
+                    <div class="inline-block bottom-center-bar">
+                        <div class="bar-time"></div>
+                    </div>
                     <div class="inline-block time text-small">4:35</div>
                 </div>
 
@@ -245,7 +261,9 @@
                     
                 </div>
 
-                <div class="bottom-right-bar inline-block"></div>
+                <div class="bottom-right-bar inline-block">
+                    <div class="bar-time"></div>
+                </div>
                 
             </div>
 
