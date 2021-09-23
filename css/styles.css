@@ -138,6 +138,7 @@ nav {
 .song-container {
     width: calc(100% / 2 - 5px);
     height: 220px;
+    max-width: 150px;
     text-align: center;
     overflow: hidden;
 }
