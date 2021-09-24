@@ -127,29 +127,39 @@ nav {
     vertical-align: super;
 }
 
-
-
-
-
-
 .playlist {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-/* .playlist-container {
+.playlist-container {
+    flex-grow: 1;
+}
+
+
+.my-playlist {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
 }
-.my-playlist {
-    display: flex;
-    flex-direction: column;
+
+.my-playlist ul {
+    list-style: none;
     flex-grow: 1;
     overflow: auto;
-} */
+}
 
+.my-playlist li {
+    padding: 5px 0;
+}
 
+.add-playlist  i{
+    font-size: 22px;
+    vertical-align: middle;
+}
 
 
 
