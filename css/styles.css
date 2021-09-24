@@ -52,6 +52,10 @@ a {
     text-decoration: none;
     color: #878787;
 }
+
+.control-border {
+    border: 1px solid red;
+}
 /**************************************************/
 
 main {
@@ -90,7 +94,6 @@ nav {
     width: 100%;
     height: 100%;
     padding: 0px 12px;
-    position: relative;
 }
 
 .logo {
@@ -124,12 +127,41 @@ nav {
     vertical-align: super;
 }
 
+
+
+
+
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* .playlist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-playlist {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
 .side-container-bottom {
-    height: 50px;
-    width: 85%;
-    position: absolute;
-    left: 12px;
-    bottom: 5px;
+    padding: 10px 0;
 }
 
 .side-container-bottom img{
@@ -145,7 +177,6 @@ nav {
 .install img {
     width: 15px;
     height: 15px;
-    margin-left: -3px;
 }
 
 .user {
@@ -256,11 +287,26 @@ nav {
     padding-bottom: 15px;
 }
 
+.img-container {
+
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .song-container .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding-bottom: 10px;
+    
 }
 
 .created-for {
@@ -443,6 +489,10 @@ nav {
         width: calc(100% / 6 - 5px);
         text-align: center;
         overflow: hidden;
+    }
+
+    nav .text-small {
+        font-size: 14px;
     }
 }
 
