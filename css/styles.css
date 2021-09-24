@@ -91,6 +91,11 @@ nav {
     width: 100%;
     height: 100%;
     padding: 0px 12px;
+    font-weight: 600;
+}
+
+.side-container a:hover {
+    color: white;
 }
 
 .logo {
@@ -132,6 +137,10 @@ nav {
     overflow: hidden;
 }
 
+.playlist > div {
+    display: none;
+}
+
 .playlist-container {
     flex-grow: 1;
 }
@@ -158,9 +167,6 @@ nav {
     font-size: 22px;
     vertical-align: middle;
 }
-
-
-
 
 .side-container-bottom {
     padding: 10px 0;
@@ -194,26 +200,9 @@ nav {
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.home {
+    border-left: 2px solid #AEFF38;
+}
 
 
 
@@ -341,6 +330,20 @@ nav {
     display: none;
 }
 
+.overlay .overlay-center {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+}
+
+.overlay .overlay-center i{
+    height: 100%;
+    width: 100%;
+    font-size: 60px;
+}
+
 .img-container:hover .overlay {
     display: block;
 }
@@ -420,8 +423,16 @@ nav {
     margin-left: 15px;
 }
 
+.nav-bottom-left-text span:hover {
+    color: white;
+}
+
 .nav-bottom-left-icons {
     text-align: center;
+}
+
+.nav-bottom-left-icons i:hover{
+    color: white;
 }
 
 .nav-bottom-center {
@@ -438,12 +449,12 @@ nav {
     padding: 7px;
 }
 
-.far.fa-play-circle {
+.play-icon-bottom {
     padding: 0 3px;
     transition: transform .2s;
 }
 
-.far.fa-play-circle:hover {
+.play-icon-bottom:hover {
     transform: scale(1.5);
 }
 
@@ -460,7 +471,6 @@ nav {
 }
 
 .bar-time{
-    /* width: 30%; */
     width: 0%;
     height: 8px;
     background-color: #bebebe;
@@ -530,8 +540,41 @@ nav {
     display: block;
 }
 
-/*********************Screen 550px - 992px **************************/
-@media screen and (min-width: 550px) and (max-width: 992px) {
+
+
+/*********************Screen s 550px - 767px **************************/
+@media screen and (min-width: 550px) and (max-width: 767px) {
+
+    .xs {
+        display: none;
+    }
+
+    .xs-none {
+        display: inline-block;
+    }
+    
+     .side-list {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .right-container {
+        width: calc(100% - 150px);
+    }
+
+    .song-container {
+        width: calc(100% / 2 - 5px);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .playlist > div {
+        display: block;
+    }
+}
+
+/*********************Screen md 768px - 992px **************************/
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     .xs {
         display: none;
@@ -555,8 +598,13 @@ nav {
         text-align: center;
         overflow: hidden;
     }
+
+    .playlist > div {
+        display: block;
+    }
 }
 
+/*********************Screen lg 993px - 2600px **************************/
 @media screen and (min-width: 993px) and (max-width: 2600px) {
 
     .xs {
@@ -583,6 +631,22 @@ nav {
     }
 
     nav .text-small {
+        font-size: 14px;
+    }
+
+    .playlist > div {
+        display: block;
+    }
+
+    h5, i {
+        font-size: 16px;
+    }
+
+    .play-icon-bottom {
+        font-size: 25px;
+    }
+
+    body {
         font-size: 14px;
     }
 }
