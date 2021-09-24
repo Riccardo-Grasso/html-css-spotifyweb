@@ -53,9 +53,6 @@ a {
     color: #878787;
 }
 
-.control-border {
-    border: 1px solid red;
-}
 /**************************************************/
 
 main {
@@ -130,13 +127,14 @@ nav {
 .playlist {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .playlist-container {
     flex-grow: 1;
 }
-
 
 .my-playlist {
     flex-grow: 1;
