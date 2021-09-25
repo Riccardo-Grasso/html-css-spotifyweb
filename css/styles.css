@@ -41,9 +41,12 @@ body {
     font-size: 12px;
 }
 
-.xs-none {
+.xs-none,
+.md-none,
+.s-none {
     display: none;
 }
+
 .padding-title {
     padding: 20px 0;
 }
@@ -552,8 +555,12 @@ nav {
     .xs-none {
         display: inline-block;
     }
+
+    .md-none {
+        display: none;
+    }
     
-     .side-list {
+    .side-list {
         min-width: 150px;
         max-width: 150px;
     }
@@ -576,11 +583,13 @@ nav {
 /*********************Screen md 768px - 992px **************************/
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    .xs {
+    .xs,
+    .md-none {
         display: none;
     }
 
-    .xs-none {
+    .xs-none,
+    .s-none {
         display: inline-block;
     }
     
@@ -602,6 +611,9 @@ nav {
     .playlist > div {
         display: block;
     }
+
+
+
 }
 
 /*********************Screen lg 993px - 2600px **************************/
@@ -611,9 +623,11 @@ nav {
         display: none;
     }
 
-    .xs-none {
-        display: inline-block;
-    }
+    .xs-none,
+    .md-none,
+    .s-none {
+    display: block;
+}
     
      .side-list {
         min-width: 150px;
