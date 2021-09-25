@@ -476,7 +476,7 @@ section.suggest {
 } 
 
 .popular-artists-container .song-container:hover .overlay-play-green {
-    display: block;
+    opacity: 1;
 } 
 
 .song-container .artist-img-container img {
