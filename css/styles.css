@@ -395,13 +395,12 @@ section.suggest {
 .created-for-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
 .created-for-container .song-container {
     background-color: #282828;
     border-radius: 10px;
-    margin-right: 20px;
     transition: background-color .4s;
     position: relative;
 }
@@ -454,7 +453,7 @@ section.suggest {
 .popular-artists-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
 .artist-img-container {
@@ -468,7 +467,6 @@ section.suggest {
 .popular-artists-container .song-container {
     background-color: #282828;
     border-radius: 10px;
-    margin-right: 20px;
     transition: background-color .4s;
     position: relative;
 }
