@@ -626,7 +626,7 @@ nav {
     .xs-none,
     .md-none,
     .s-none {
-    display: block;
+    display: inline-block;
 }
     
      .side-list {
