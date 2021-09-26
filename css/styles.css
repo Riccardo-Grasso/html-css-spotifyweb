@@ -489,14 +489,6 @@ section.suggest {
 
 
 
-
-
-
-
-
-
-
-
 .nav-bottom-left {
     display: flex;
     align-items: center;
@@ -643,7 +635,55 @@ section.suggest {
     display: block;
 }
 
+/*********************Under xs, max 500px******************************/
+@media screen and (max-width: 500px) {
+    .under-xs-none {
+        display: none;
+    }
 
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: #282828;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .nav-bottom-left {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        flex-shrink: 1;
+    }
+
+    .nav-bottom-center {
+        width: 55%;
+        text-align: center;
+        flex-shrink: 3;
+    }
+
+    .nav-bottom-left-icons .far.fa-heart {
+        font-size: 20px;
+    }
+
+    .nav-bottom-left-text {
+        padding: 0px 7px 0 10px;
+        line-height: 14px;
+        margin-left: 10px;
+    }
+
+    .nav-bottom-center-icons i {
+        font-size: 18px;
+    }
+
+    .nav-bottom-center-icons i.far.fa-play-circle {
+        font-size: 30px;
+    }
+}
 
 /*********************Screen s 550px - 767px **************************/
 @media screen and (min-width: 550px) and (max-width: 767px) {
